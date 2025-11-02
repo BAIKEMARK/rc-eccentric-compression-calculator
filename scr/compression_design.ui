@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>581</width>
+    <height>415</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>偏心受压构件计算器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>571</width>
+     <height>401</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="usesScrollButtons">
+    <bool>true</bool>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>非对称矩形截面设计</string>
+    </attribute>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="show_process_ansymmetric">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>291</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>353</y>
+       <width>62</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>As'已知</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="calculate_an">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>350</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>计算</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>11</y>
+       <width>223</width>
+       <height>246</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁宽b(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="b"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁高h(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="h"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>as（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="_as">
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>混凝土强度等级</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="c_level">
+        <item>
+         <property name="text">
+          <string>C15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C25</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C30</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C35</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C40</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C45</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C50</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C55</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C60</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C65</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C70</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C75</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C80</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>纵筋级别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="s_level">
+        <item>
+         <property name="text">
+          <string>HPB300</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB335</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB500</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>长度l(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lc"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>弯矩M1(KNm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="M1">
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>弯矩M2(KNm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="M2"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>轴力N（KN）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="N">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="Asp_lable">
+        <property name="text">
+         <string>As'(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="Asp">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>282</y>
+       <width>220</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>计算纵筋As（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTextBrowser" name="show_As_an">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>27</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>27</height>
+         </size>
+        </property>
+        <property name="openLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>计算纵筋As'（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTextBrowser" name="show_Asp_an">
+        <property name="maximumSize">
+         <size>
+          <width>161</width>
+          <height>27</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>对称矩形截面设计</string>
+    </attribute>
+    <widget class="QTextBrowser" name="show_process_symmetric">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>291</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="calculate_As">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>330</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>计算</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>计算纵筋As（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTextBrowser" name="show_As">
+        <property name="maximumSize">
+         <size>
+          <width>117</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="openLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>11</y>
+       <width>223</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁宽b(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="b_2"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁高h(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="h_2"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>as（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="_as_2">
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>混凝土强度等级</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="c_level_2">
+        <item>
+         <property name="text">
+          <string>C15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C25</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C30</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C35</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C40</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C45</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C50</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C55</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C60</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C65</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C70</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C75</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C80</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>纵筋级别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="s_level_2">
+        <item>
+         <property name="text">
+          <string>HPB300</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB335</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB500</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>长度l(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lc_2"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>弯矩M1(KNm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="M1_2">
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>弯矩M2(KNm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="M2_2"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>轴力N（KN）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="N_2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>截面复核（对称/非对称截面）</string>
+    </attribute>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="show_process_check">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>291</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="calculate_M2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>330</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>计算</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_n">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>330</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>已知N求M|已知e0求N</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>223</width>
+       <height>246</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_6">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁宽b(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="b_4"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_35">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>梁高h(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="h_4"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>as（mm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="_as_4">
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_38">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>混凝土强度等级</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="c_level_4">
+        <item>
+         <property name="text">
+          <string>C15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C25</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C30</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C35</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C40</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C45</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C50</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C55</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C60</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C65</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C70</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C75</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C80</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_39">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>纵筋级别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="s_level_4">
+        <item>
+         <property name="text">
+          <string>HPB300</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB335</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HRB500</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_37">
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>长度l(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lc_4"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="As_lable_4">
+        <property name="text">
+         <string>As(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="As_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="Asp_lable_5">
+        <property name="text">
+         <string>As'(mm)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="Asp_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_change">
+        <property name="text">
+         <string>轴力N（KN）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="change">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_m1m2">
+        <property name="text">
+         <string>M1/M2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="M1_M2">
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_7">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>能承载M2（KNm）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTextBrowser" name="show_M2">
+        <property name="maximumSize">
+         <size>
+          <width>123</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="acceptRichText">
+         <bool>true</bool>
+        </property>
+        <property name="openLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
