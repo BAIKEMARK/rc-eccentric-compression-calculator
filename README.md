@@ -23,9 +23,9 @@
 
     ## 功能展示
 
-    ![example](.\img\example.png)
+    ![example](./img/example.png)
 
-    ![ui_showing](.\img\ui_showing.png)
+    ![ui_showing](./img/ui_showing.png)
 
     ## 技术栈
 
@@ -66,7 +66,7 @@
 
     ### **1. 普通用户 (下载即用)**
 
-    1. **下载**: 从 [GitHub Releases 页面](https://www.google.com/search?q=https://github.com/YOUR_USERNAME/YOUR_REPO/releases) 下载最新的 `偏心受压构件计算器.exe` 文件。
+    1. **下载**: 从 [GitHub Releases 页面](下载[偏心受压构件计算器.exe](https://github.com/BAIKEMARK/rc-eccentric-compression-calculator/blob/master/%E5%81%8F%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E8%AE%A1%E7%AE%97%E5%99%A8.exe)，双击可执行文件即可使用) 下载最新的 `偏心受压构件计算器.exe` 文件。
     2. **运行**: 双击 `偏心受压构件计算器.exe` 可执行文件即可直接运行。
 
     ### **2. 开发人员 (从源码运行)**
